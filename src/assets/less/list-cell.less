@@ -1,0 +1,42 @@
+.c-list-cells {
+	position: relative;
+	background-color: #fff;
+    .before();
+    .after();
+	& + &::before {
+		display: none;
+	}
+	.c-list-cell:first-child:before {
+		display: none;
+	}
+}
+/*列表内部*/
+.c-list-cell {
+    position: relative;
+    padding: @p;
+    .before();
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),not all {
+    .c-list-cells:after,
+	.c-list-cells:before,
+	.c-list-cell:before {
+		transform: scaleY(.667);
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2),not all {
+    .c-list-cells:after,
+	.c-list-cells:before,
+	.c-list-cell:before {
+		transform: scaleY(.5);
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:3),not all {
+    .c-list-cells:after,
+	.c-list-cells:before,
+	.c-list-cell:before {
+		transform: scaleY(.3333);
+	}
+}

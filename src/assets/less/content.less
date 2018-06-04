@@ -1,0 +1,283 @@
+html,
+body {
+    width: 100%;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    margin: auto;
+    margin-left: @p;
+    margin-right: @p;
+}
+
+.c-container,
+.c-page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.c-page {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/*页头*/
+
+.c-header-con {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    line-height: .96rem;
+    background: #fff;
+    .c-return {
+        position: absolute;
+        left: .2rem;
+        height: 100%;
+        img {
+            width: .48rem;
+            height: .48rem
+        }
+    }
+    .c-title {
+        text-align: center;
+        font-size: 0.4rem;
+        color: #000;
+    }
+    .c-name {
+        position: absolute;
+        right: .3rem;
+        height: 100%;
+        top: 0;
+    }
+}
+
+
+/*页脚*/
+
+.c-footer-con {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.c-footer {
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.c-fixed {
+    position: absolute;
+    right: 0;
+    left: 0;
+    // background-color: #fff;
+    z-index: 2;
+}
+
+
+.list-cell{
+    border-bottom: 1px solid #ddd;
+    height: .8rem;
+    color: #888;
+    .icon{
+        width: .32rem;
+        height: .32rem;
+        margin-right: .2rem;
+        &.add{
+            background: url("../images/add.svg") no-repeat;
+            background-size:100%;
+        };
+        &.w{
+            background: url("../images/w.svg") no-repeat;
+            background-size:100%;
+        }
+    }
+    input{
+       font-size: .26rem;
+       color: #888;
+    }
+}
+
+
+//登录 找回和忘记密码
+.form-wrap{
+    z-index: 3;
+    position: relative;
+    .logo{
+        width: 100%;
+        height: 1.08rem;
+        text-align: center;
+        margin:0.3rem 0;
+        img{
+            width: 5.76rem;
+            height: 1.08rem;
+        }
+    }
+    .cell{
+        height: .8rem;
+       &.p1{
+           input{
+            height: .8rem;
+            padding-left: .1rem;;
+           }
+       }
+        img{
+            width: .48rem;
+            height: .48rem;
+        }
+    };
+    .btn{
+        height: .86rem;
+        color: #fff;
+        text-align: center;
+        line-height: .86rem;
+        border-radius: .06rem;
+        margin-top: 1rem;
+    }
+}
+
+//单选
+.q-list{
+    .mint-cell{
+        min-height: .8rem;
+        
+    }
+    .mint-radiolist-label{
+        display: flex;
+        align-items: center;
+        padding: .1rem 0;
+    }
+    .mint-radio{
+        width: .35rem;
+        height: .35rem;
+    }
+    .mint-radiolist-title {
+      font-size: 0.3rem;
+      background: #fff;
+      margin: 0;
+      color: #222;
+      padding: .2rem .3rem;
+    }
+    .mint-cell-wrapper{
+        padding: 0 .3rem;
+    }
+    .mint-radio-label {
+      font-size: 0.26rem;
+      margin-left: .2rem;
+      line-height: .5rem;
+    }
+    .mint-radio-input:checked + .mint-radio-core {
+      background-color: #5d7c33;
+      border-color: #5d7c33;
+    }
+    .mint-radio-core::after{
+        width: .1rem;
+        height: .1rem;
+        top: .075rem;
+        left: .08rem;
+    }
+    .mint-radio-core{
+        width: .3rem;
+        height: .3rem;
+    } 
+  }
+
+  //多选
+  //单选
+.mint-checkbox-core::after{
+    top: 4px;
+    left: 7px;
+}
+.q-list{
+    .mint-cell{
+        min-height: .8rem;
+        
+    }
+    .mint-checklist-label{
+        display: flex;
+        align-items: center;
+        padding: .1rem 0;
+    }
+    .mint-checkbox{
+        width: .3rem;
+        height: .3rem;
+    }
+    .mint-checklist-title {
+      font-size: 0.3rem;
+      background: #fff;
+      margin: 0;
+      line-height: .48rem;
+      padding: .2rem .3rem;
+      color: #222;
+    }
+    .mint-cell-wrapper{
+        padding: 0 .3rem;
+    }
+    .mint-checkbox-label {
+      font-size: 0.26rem;
+      margin-left: .2rem;
+      line-height: .5rem;
+    }
+    .mint-checkbox-input:checked + .mint-checkbox-core {
+      background-color: #5d7c33;
+      border-color: #5d7c33;
+    }
+    .mint-checkbox-core::after{
+        width: .1rem;
+        height: .14rem;
+        top: .03rem;
+        left: .08rem;
+    }
+    .mint-checkbox-core{
+        width: .3rem;
+        height: .3rem;
+    }
+  }
+
+.remark{
+    padding-left: .75rem;
+    padding-right: .3rem;
+    background: #fff;
+    font-size: 0.26rem;
+    border-bottom: 1px solid #ddd;
+    height: .8rem;
+    width: 100%;
+}
+
+.q-cell{
+    .remark;
+    font-size: 0.3rem;
+    color: #666;
+    line-height: .8rem;
+    .icon{
+        width: .32rem;
+        height: .32rem;
+        transform:rotate(180deg);
+    }
+
+}
+
+.img-cell{
+    padding: 0 .2rem;
+}

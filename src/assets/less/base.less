@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@import './fn.less';
+
+@p: 0.25rem;
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body,
+ul,
+li,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+button {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: -apple-system-font, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: .26rem;
+  line-height: 1.42857143;
+  background-color: #eee;
+  color: #333;
+}
+li {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none !important;
+  color: inherit;
+}
+input,
+button,
+textarea {
+  -webkit-appearance: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: -apple-system-font, "Helvetica Neue", Helvetica, sans-serif;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+::-webkit-input-placeholder {
+	color: #888;
+}
+
+
+// textarea[disabled]{background: #fff;}
+/*简写样式*/
+@import './simple.less';
+/*border*/
+@import './border.less';
+/*主体内容*/
+@import './content.less';
+/*flex*/
+@import './flex.less';
+/*list*/
+@import './list-cell.less';
+/*css*/
+@import './css.less';
+
